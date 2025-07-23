@@ -11,7 +11,7 @@ app.post('/webhook', (req, res) => {
   const intentName = req.body.queryResult.intent.displayName;
 
   if (intentName === 'WebHookDemo') {
-    const responseText = 'this is sample WebHookDemo! response from your Node.js ';
+    const responseText = 'this is sample WebHookDemo! response from your Node.js';
 
     return res.json({
       fulfillmentText: responseText,
